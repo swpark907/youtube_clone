@@ -1,0 +1,26 @@
+.navbar{
+    background-color: black;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    color: white;
+}
+
+.searchBar{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.search{
+    width: 100%;
+    font-size: 1.5rem;
+}
+button{
+    width: 60px;
+    margin-left: 10px;
+}
+
