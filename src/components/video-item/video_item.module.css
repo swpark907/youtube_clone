@@ -1,0 +1,46 @@
+.videos{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+
+}
+
+.container{
+    width: 50%;
+    padding: 0.4em;
+    box-sizing: border-box;
+}
+
+.video{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    margin-top: 2em;
+    align-items: center;
+    transition: transform 250ms ease;
+    border: solid 1px lightgray;    
+    box-shadow: 10px 5px 8px 0px #A0A0A0;
+
+}
+
+.video:hover{
+    transform: scale(1.02);    
+}
+
+.desc{
+    margin-left: 1em;
+}
+
+.title, .channel{
+    margin: 0.4em;
+}
+
+.title{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.channel{
+    font-size: 0.9rem;
+}
