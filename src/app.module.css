@@ -4,6 +4,7 @@
 
 .content{
   display: flex;
+  
 }
 
 .detail{
@@ -12,4 +13,12 @@
 
 .list{
   flex: 1 1 30%;
+}
+
+@media screen and (max-width: 768px){
+
+  .content{
+    flex-direction: column;
+  }
+
 }
