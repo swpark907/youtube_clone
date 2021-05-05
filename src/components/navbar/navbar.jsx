@@ -8,11 +8,13 @@ const Navbar = memo(
     
         const handleSearch = () => {
             const value = inputRef.current.value;
-            searchVideo(value);
+            searchVideo(value);     
+            console.log('handleSearch')       
         }
     
         const onClick = (event) => {        
-            handleSearch();        
+            handleSearch();
+            console.log('clicked')  
         }
     
         const onKeyPress = (event) => {        

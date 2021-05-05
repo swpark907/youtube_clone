@@ -22,12 +22,13 @@ class Youtube {
     }
 
     async search(query) {
-
-        const response = await this.youtube.get('videos',{
+        console.log(query, 'in youtube')
+        const response = await this.youtube.get('search',{
             params:{
                 part: 'snippet',
-                chart: 'mostPopular',
                 maxResults: 25,
+                q: query,                
+                type: 'video',
             }
         })
 

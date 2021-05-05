@@ -19,11 +19,12 @@ function App({youtube}) {
   }, [youtube] );
 
   const searchVideo =  useCallback(
-    query => {
+    query => {      
       youtube.search(query)
       .then(videos => {
         setVideos(videos);
         setSelectItem(null);
+        
       })
     }
   ,[youtube]) 
@@ -44,6 +45,7 @@ function App({youtube}) {
         <div className={styles.list}>
           <VideoList videos={videos} onVideoClick={selectVideo} display={ selectItem? 'list' : 'grid' } />    
         </div>
+
       </section>
       
     </div>
